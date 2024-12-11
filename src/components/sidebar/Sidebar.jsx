@@ -1,5 +1,5 @@
 import "./sidebar.css"
-import { HelpOutline, RssFeed, School, WorkOutline } from "@mui/icons-material"
+import { HelpOutline, RssFeed, School, WorkOutline, Chat, Event, Tv, Group, Bookmark } from "@mui/icons-material"
 
 export default function Sidebar() {
   return (
@@ -11,19 +11,19 @@ export default function Sidebar() {
             <span className="sidebarListItemText">Feed</span>
           </li>
           <li className="sidebarListItem">
-            <RssFeed className="sidebarIcon" />
+            <Chat className="sidebarIcon" />
             <span className="sidebarListItemText">Chats</span>
           </li>
           <li className="sidebarListItem">
-            <RssFeed className="sidebarIcon" />
+            <Tv className="sidebarIcon" />
             <span className="sidebarListItemText">Videos</span>
           </li>
           <li className="sidebarListItem">
-            <RssFeed className="sidebarIcon" />
+            <Group className="sidebarIcon" />
             <span className="sidebarListItemText">Groups</span>
           </li>
           <li className="sidebarListItem">
-            <RssFeed className="sidebarIcon" />
+            <Bookmark className="sidebarIcon" />
             <span className="sidebarListItemText">Bookmarks</span>
           </li>
           <li className="sidebarListItem">
@@ -35,7 +35,7 @@ export default function Sidebar() {
             <span className="sidebarListItemText">Jobs</span>
           </li>
           <li className="sidebarListItem">
-            <RssFeed className="sidebarIcon" />
+            <Event className="sidebarIcon" />
             <span className="sidebarListItemText">Events</span>
           </li>
           <li className="sidebarListItem">
@@ -46,6 +46,30 @@ export default function Sidebar() {
         <button className="sidebarButton">Show More</button>
         <hr className="sidebarHr" />
         <ul className="sidebarFriendList">
+          <li className="sidebarFriend">
+            <img className="sidebarFriendImg" src="/assets/person/2.png" alt="" />
+            <span className="sidebarFriendName">Mansurul</span>
+          </li>
+          <li className="sidebarFriend">
+            <img className="sidebarFriendImg" src="/assets/person/2.png" alt="" />
+            <span className="sidebarFriendName">Mansurul</span>
+          </li>
+          <li className="sidebarFriend">
+            <img className="sidebarFriendImg" src="/assets/person/2.png" alt="" />
+            <span className="sidebarFriendName">Mansurul</span>
+          </li>
+          <li className="sidebarFriend">
+            <img className="sidebarFriendImg" src="/assets/person/2.png" alt="" />
+            <span className="sidebarFriendName">Mansurul</span>
+          </li>
+          <li className="sidebarFriend">
+            <img className="sidebarFriendImg" src="/assets/person/2.png" alt="" />
+            <span className="sidebarFriendName">Mansurul</span>
+          </li>
+          <li className="sidebarFriend">
+            <img className="sidebarFriendImg" src="/assets/person/2.png" alt="" />
+            <span className="sidebarFriendName">Mansurul</span>
+          </li>
           <li className="sidebarFriend">
             <img className="sidebarFriendImg" src="/assets/person/2.png" alt="" />
             <span className="sidebarFriendName">Mansurul</span>
