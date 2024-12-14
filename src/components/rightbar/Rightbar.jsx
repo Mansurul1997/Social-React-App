@@ -1,4 +1,6 @@
-import "./rightbar.css"
+import "./rightbar.css";
+import {Users} from "../../dummyData";
+import Online from "../online/Online";
 
 export default function Rightbar() {
   return (
@@ -11,83 +13,9 @@ export default function Rightbar() {
         <img src="assets/ads.jpg" alt="" className="rightbarAd" />
         <h4 className="rightbarTitle">Online Friends</h4>
         <ul className="rightbarFriendList">
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img className="rightbarProfileImg" src="assets/person/Zawad.jpg" alt="" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Abdullah Al Zawad</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img className="rightbarProfileImg" src="assets/person/Shifat.jpg" alt="" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Md. Mostafizur Rahman</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img className="rightbarProfileImg" src="assets/person/Rakib.jpg" alt="" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Md. Rakibul Islam</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img className="rightbarProfileImg" src="assets/person/Sharar.jpg" alt="" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Ahsan Yasir Sharar</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img className="rightbarProfileImg" src="assets/person/Ayan.jpg" alt="" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Muntasir Ayan</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img className="rightbarProfileImg" src="assets/person/Rifat.jpg" alt="" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Md. Robayet Ahasan</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img className="rightbarProfileImg" src="assets/person/Mohobbat.jpg" alt="" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Mohobbat Rana</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img className="rightbarProfileImg" src="assets/person/Masum.jpg" alt="" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Abdullah Al Masum</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img className="rightbarProfileImg" src="assets/person/Roky.jpg" alt="" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Mahamudur Rahman Roky</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img className="rightbarProfileImg" src="assets/person/Naim.jpg" alt="" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Naim Ishtiaq</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img className="rightbarProfileImg" src="assets/person/Athar.jpg" alt="" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Athar Ishtiaq</span>
-          </li>
+          {Users.map(u=>(
+            <Online key={u.id} user={u} />
+          ))}
         </ul>
       </div>
     </div>
